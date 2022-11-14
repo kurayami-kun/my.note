@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my.note</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="pc.css"/>
+        <link rel="icon" href="https://logodix.com/logo/1174690.png"/>
+        <meta name="viewport" content="user-scalable=no"/>
+    </head>
+    <body>
+        <div class="continer">
+            <div class="new">
+                <h2>- ملاحظة جديدة -</h2>
+                <br/>
+                <input class="title" type="text" placeholder="العنوان"/>
+                <select>
+                    <option selected>عادية</option>
+                    <option>مهمة</option>
+                    <option>شديدة الأهمية</option>
+                </select>
+                <br/>
+                <textarea class="text" placeholder="النص"></textarea>
+                <br/>
+                <div class="buttons">
+                    <button class="cancel" type="button">إلغاء</button>
+                    <button class="add" type="button">حفظ</button>    
+                </div>
+            </div>
+            <div class="notes">
+                <h2>- الملاحظات -</h2>
+                <div class="head">
+                    <h3>قراءة</h3>
+                    <h3>العنوان</h3>
+                    <h3>النوع</h3>
+                    <h3>التاريخ</h3>
+                    <h3>حذف</h3>
+                </div>
+                <div class="body"></div>
+            </div>
+            <div class="regist">
+                <h2>- السجل -</h2>
+                <div class="head2">
+                    <h3>العنوان</h3>
+                    <h3>العملية</h3>
+                    <h3>التاريخ</h3>
+                </div>
+                <div class="body2"></div>
+                <div class="buttons2">
+                    <button class="openr" onclick="openregist(this)">فتح</button>
+                    <button class="deleteall" onclick="deleteall()">حذف السجل</button>
+                    <button class="closer" onclick="closeregist(this)">إغلاق</button>
+                </div>
+            </div>
+            <div>
+                <div class="mod">
+                    <button class="dark" onclick="dark_mod()"></button>
+                    <button class="light" onclick="light_mod()"></button>
+                </div>
+                <br/>
+                <a href="https://kurayami-kun.github.io/kurayami-makkura/kurayami_makkura.html" target="_blank">Kurayami Makkura</a>
+            </div>            
+        </div>
+        <h1></h1>
+        <script src="my.note.js"></script>
+    </body>
+</html>
